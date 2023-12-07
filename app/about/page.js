@@ -7,10 +7,10 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="">
-    <AboutSection />
+    <div className="container">
+      <AboutSection />
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

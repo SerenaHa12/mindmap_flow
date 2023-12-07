@@ -7,7 +7,7 @@ const NotFound = () => {
     <div className="py-12 xl:py-24 h-[84vh] xl:pt-28 container mx-auto items-center text-center">
       <div className="flex items-center">
         <Image
-          src="/401.png"
+          src="/404.png"
           width={300}
           height={300}
           alt="404"
