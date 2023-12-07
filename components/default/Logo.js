@@ -4,7 +4,7 @@ import Image from "next/image";
 const Logo = () => {
   return (
     <Link href="/">
-      <Image src="/logo.svg" width={33.55} height={42} priority alt="logo" className="mr-[120px]"/>
+      <p className="text-xl font-semibold text-blue-700">Mindmap Flow</p>
     </Link>
   );
 };

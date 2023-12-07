@@ -33,7 +33,7 @@ const SearchToggle = () => {
       <Popover>
         <PopoverTrigger asChild>
           <Button variant="ghost" className="hover:bg-transparent">
-            <Search2Icon className="h-[1.2rem] w-[1.2rem] transition-all" />
+            <Search2Icon className="h-[1.2rem] w-[1.2rem] transition-all text-zinc-900 dark:text-zinc-100" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-80 mt-2 outline-none">

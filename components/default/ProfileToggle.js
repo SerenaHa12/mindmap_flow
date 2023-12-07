@@ -7,7 +7,7 @@ const ProfileToggle = () => {
   return (
     <div className="flex items-center px-2">
       <Link href="/sign-in" className={buttonVariants}>
-        <AvatarIcon className="h-[1.2rem] w-[1.2rem] transition-all" />
+        <AvatarIcon className="h-[1.2rem] w-[1.2rem] transition-all text-zinc-900 dark:text-zinc-100" />
       </Link>
     </div>
   );

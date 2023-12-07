@@ -6,10 +6,9 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
 
   const links = [
     { path: "/", name: "Home" },
-    { path: "/book", name: "Book" },
-    { path: "/package", name: "Package" },
+    { path: "/about", name: "About" },
     { path: "/service", name: "Service" },
-    { path: "/review", name: "Review" },
+    { path: "/price", name: "Price" },
     { path: "/contact", name: "Contact" }
   ];
 
