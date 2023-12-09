@@ -38,7 +38,7 @@ const Header = () => {
             {/* cnay sẽ hiện ra khi login thành công <ProfileToggle />*/}
             <div className="flex gap-2">
               <Link href="login">
-                <Button variant="secondary">Login</Button>
+                <Button variant="secondary">Sign in</Button>
               </Link>
               <Link href="register">
                 <Button>Sign up free</Button>

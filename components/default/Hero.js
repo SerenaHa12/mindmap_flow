@@ -24,9 +24,11 @@ const Hero = () => {
               <Link href="/contact">
                 <Button>Contact Us</Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Sign in
-              </Button>
+              <Link href="login">
+                <Button variant="secondary" className="gap-x-2">
+                  Sign in
+                </Button>
+              </Link>
             </div>
           </div>
 

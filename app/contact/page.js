@@ -4,9 +4,7 @@ export const metadata = {
 };
 
 const ContactPage = () => {
-  return (
-    <div>ContactPage</div>
-  )
-}
+  return <div className="container">ContactPage</div>;
+};
 
-export default ContactPage
+export default ContactPage;

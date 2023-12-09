@@ -5,7 +5,7 @@ export const metadata = {
 
 const PricePage = () => {
   return (
-    <div>PricePage</div>
+    <div className="container">PricePage</div>
   )
 }
 

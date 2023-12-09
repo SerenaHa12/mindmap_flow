@@ -8,7 +8,7 @@ const Brand = () => {
         width={10000}
         height={300}
         alt="brand"
-        className="mx-auto dark:bg-zinc-100 rounded-sm"
+        className="mx-auto dark:bg-zinc-100 rounded-md"
       />
     </div>
   );

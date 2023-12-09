@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 const ServicePage = () => {
-  return <div>ServicePage</div>;
+  return <div className="container">ServicePage</div>;
 };
 
 export default ServicePage;
