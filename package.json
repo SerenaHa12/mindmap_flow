@@ -11,6 +11,7 @@
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",
     "@chakra-ui/icons": "^2.1.1",
+    "@clerk/nextjs": "^4.28.1",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -42,6 +43,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
+    "framer-motion": "^10.16.16",
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
