@@ -9,7 +9,8 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
     { path: "/about", name: "About" },
     { path: "/service", name: "Service" },
     { path: "/price", name: "Price" },
-    { path: "/contact", name: "Contact" }
+    { path: "/contact", name: "Contact" },
+    { path: "/mindmap", name: "Mind Map" }
   ];
 
   const pathname = usePathname();
