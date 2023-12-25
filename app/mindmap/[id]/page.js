@@ -1,9 +1,11 @@
-import React from 'react'
+import MindMapItem from "@/components/mindmap/MindMapItem";
 
-const MindMapItem = () => {
+const MindMapPage = () => {
   return (
-    <div className='container mx-auto'>MindMapItem</div>
-  )
-}
+    <div className="container mx-auto my-8 h-[1000px]">
+      <MindMapItem />
+    </div>
+  );
+};
 
-export default MindMapItem
+export default MindMapPage;

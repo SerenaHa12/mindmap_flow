@@ -54,7 +54,7 @@ const MindMap = () => {
 
   return (
     <div className="my-4">
-      <Button variant="secondary" onClick={handleAdd}>
+      <Button variant="secondary" onClick={handleAdd} className="mb-4">
         ADD
       </Button>
 
@@ -63,7 +63,8 @@ const MindMap = () => {
           <TableRow>
             <TableHead>Name</TableHead>
             <TableHead>Description</TableHead>
-            <TableHead className="text-right">Create At</TableHead>
+            <TableHead>Create At</TableHead>
+            <TableHead>Action</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -71,13 +72,20 @@ const MindMap = () => {
             listMap.length > 0 &&
             listMap.map((item, index) => (
               <>
-                <Link href={`/mindmap/${item.id}`}>
-                  <TableRow key={index}>
-                    <TableCell>{item.name}</TableCell>
-                    <TableCell>{item.description}</TableCell>
-                    <TableCell>{item.createdAt}</TableCell>
-                  </TableRow>
-                </Link>
+                <TableRow key={index}>
+                  <TableCell>
+                    <Link href={`/mindmap/${item.id}`}>{item.name}</Link>
+                  </TableCell>
+
+                  <TableCell>{item.description}</TableCell>
+                  <TableCell>{item.createdAt}</TableCell>
+                  <TableCell>
+                    <div className="flex gap-x-4">
+                      <Button>View</Button>
+                      <Button>Delete</Button>
+                    </div>
+                  </TableCell>
+                </TableRow>
               </>
             ))}
         </TableBody>

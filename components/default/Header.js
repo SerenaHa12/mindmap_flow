@@ -37,10 +37,10 @@ const Header = () => {
             <SearchToggle />
             {/* cnay sẽ hiện ra khi login thành công <ProfileToggle />*/}
             <div className="flex gap-2">
-              <Link href="login">
+              <Link href="sign-in">
                 <Button variant="secondary">Sign in</Button>
               </Link>
-              <Link href="register">
+              <Link href="sign-up">
                 <Button>Sign up free</Button>
               </Link>
             </div>
