@@ -5,6 +5,7 @@ import Footer from "@/components/default/Footer";
 import { ThemeProvider } from "@/components/default/ThemeProvider";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from '@clerk/themes';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +18,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ClerkProvider>
+        <ClerkProvider
+          // appearance={{
+          //   baseTheme: dark,
+          // }}
+        >
           <UserProvider>
             <ThemeProvider attribute="class" defaultTheme="dark">
               <Header />
-              {children}
+              <main>
+                <div className="mt-20">{children}</div>
+              </main>
             </ThemeProvider>
           </UserProvider>
         </ClerkProvider>

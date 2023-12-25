@@ -53,7 +53,7 @@ const MindMap = () => {
   };
 
   return (
-    <div className="my-4">
+    <div>
       <Button variant="secondary" onClick={handleAdd} className="mb-4">
         ADD
       </Button>
