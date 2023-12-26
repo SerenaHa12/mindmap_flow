@@ -1,15 +1,15 @@
 import ProfileToggle from "./ProfileToggle";
 import { Button } from "../ui/button";
-import { UserButton, auth } from "@clerk/nextjs";
+import { UserButton, useUser } from "@clerk/nextjs";
+//clerk ma
 
 import Link from "next/link";
-const AuthHeader = async ({ username }) => {
-  const { userId } = auth();
-  console.log("id", userId);
-
+const AuthHeader = ({ username }) => {
+  const { user } = useUser();
+  console.log(user);
   return (
     <div className="flex items-center">
-      {userId && (
+      {user && (
         <div className="flex gap-2">
           <Link href="profile" className="text-gray-300 hover:text-white mr-4">
             <ProfileToggle />
@@ -22,7 +22,7 @@ const AuthHeader = async ({ username }) => {
       </div>
 
       <div className="flex gap-2">
-        {!userId && (
+        {!user && (
           <>
             <Link href="sign-in">
               <Button variant="secondary">Sign in</Button>
