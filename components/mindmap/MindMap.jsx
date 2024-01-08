@@ -16,6 +16,8 @@ import { getApiMap, postApiMap } from "@/service/mindmapApi";
 import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
 
+
+// mindmap
 const MindMap = () => {
   const [listMap, setListMap] = useState([]);
 
